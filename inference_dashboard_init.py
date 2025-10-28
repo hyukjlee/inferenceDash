@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 CENTERED_WIDTH = 1500
-DEFAULT_CHART_HEIGHT = 500
+DEFAULT_CHART_HEIGHT = 700
 
 def inject_layout_styles():
     st.markdown(
@@ -529,7 +529,7 @@ def main():
         gridcolor="LightGray",
     )
     fig.update_yaxes(
-        title="Token Throughput per GPU (tokens/s)",
+        title="Token Throughput per GPU (tokens/sec)",
         range=[y_min - y_padding, y_max + y_padding],
         gridwidth=1,
         showgrid=True,
